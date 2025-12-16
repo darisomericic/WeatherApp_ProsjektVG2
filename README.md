@@ -56,6 +56,7 @@ Bruker → UI (brukergrensesnitt) → API-kall → WeatherAPI → JSON-data → 
 
 - Jeg hadde React som interessegruppe, så jeg ville prøve det på prosjektet mitt
 
+----
 ### Hvorfor har jeg mange feilhåndterings linjer 
 - API-kall er ikke alltid stabil, og feilmeldinger gjør det enklere for meg å se hva problemet er 
 
@@ -69,8 +70,7 @@ Bruker → UI (brukergrensesnitt) → API-kall → WeatherAPI → JSON-data → 
 - Trenger ikke å laste ned mange ting som jeg hadde gjort med axios
 
 - Fetch er en del av JavaScript, og det fungerer i alle moderne nettlesere
-
-  ----
+ ----
 
 # Available Scripts
 ## In the project directory, you can run:
