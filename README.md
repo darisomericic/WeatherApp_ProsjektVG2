@@ -8,7 +8,7 @@ Appen henter data fra en ekstern vær-API og presenterer temperatur, vind, fukti
 # 🚀 Funksjoner
 ### Hva appen viser/gjør 
 
- - Henter værdata fra en ekstern API (`WeatherAPI`)
+ - Henter værdata fra en ekstern API (https://www.weatherapi.com/)
 
  - Søk etter værmelding for hvilken som helst by i hele verden 
   
