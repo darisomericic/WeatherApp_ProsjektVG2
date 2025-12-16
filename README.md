@@ -72,8 +72,8 @@ Bruker → UI (brukergrensesnitt) → API-kall → WeatherAPI → JSON-data → 
 - Fetch er en del av JavaScript, og det fungerer i alle moderne nettlesere
  ----
 
-# Available Scripts
-## In the project directory, you can run:
+# Tilgjengelige Skript
+## I denne mappen kan du kjøre følgende:
 
 ### `npm start`
 Kjører appen i development modus.
