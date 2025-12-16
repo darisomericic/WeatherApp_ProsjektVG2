@@ -1,0 +1,233 @@
+body {
+  background-image: url(img/blurredsky.png);
+  background-size: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  top: 10vw;
+  flex-direction: row;
+  justify-content: center;
+
+ 
+
+}
+
+
+
+.innhold input {  
+  padding: 8px;
+  opacity: 60%;
+  border-radius: 5px;
+  border: none;
+  margin: 2px;
+  
+
+  
+}
+
+
+button {
+  width: 50px;
+  padding: 8px;
+  border-radius: 5px;
+  opacity: 60%;
+  background-color: rgb(58, 199, 58);
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover {
+   background-color: rgb(93, 202, 93);
+}
+
+button:active {
+  background-color: rgb(148, 222, 148);
+  box-shadow: 0 1px #ffffff;
+  transform: translateY(4px);
+}
+
+.weatherbox {
+  background-color: black;
+  opacity: 50%;
+  border-radius: 5px;
+  height: clamp(340px, 50%, 500px);
+  
+}
+
+.weatherbox h3 {
+  color: white;
+  text-align: center;
+  background-color: #352727;
+  height: 32px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.weatherbox p {
+  color: white;
+  text-align: right;
+  margin-right: 25px;
+  font-size: 14px;         
+}
+
+
+.bilde img {
+  width: 50%;
+  transform: translateY(-190px);
+  background-color: #3f3c3c;
+  margin: 10px;
+  border-radius: 5px;
+  height: 170px;
+  margin-top: 1rem;
+  
+}
+
+.searchHistory {
+  text-align: center;
+  transform: translateY(-150px);
+  color: #ffffff;
+  opacity: 100%;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+@media (max-width: 409px) {
+  .innhold input {
+    padding: 3px;
+    width: 40%;
+  }
+
+  button {
+    padding: 3px;
+
+  }
+
+   .weatherbox h3 {
+    font-size: 17px;
+    height: 25px;
+   }
+
+   .weatherbox p {
+    font-size: 13px;
+   }
+
+   .bilde img {
+    margin-top: 20px;
+   }
+
+   .searchHistory {
+    font-size: 15px;
+    transform: translateY(-150px);
+
+   }
+
+   .weatherbox {
+    height: clamp(310px, 50%, 500px);
+   }
+}
+
+
+
+
+
+@media (max-width: 400px) {
+  .bilde img {
+   height: 150px;
+   width: 160px;
+   transform: translateY(-180px);
+   margin-left: 10px;
+   
+  }
+
+  .weatherbox {
+    height: clamp(300px, 50%, 500px);
+  }
+  .searchHistory {
+    transform: translateY(-150px);
+  }
+
+  
+}
+
+
+@media (max-width: 376px) {
+
+   .weatherbox {
+    margin: 10px;
+  }
+ 
+
+  .innhold input {
+    width: 38.5%;
+    
+   }
+
+   .weatherbox h3 {
+    font-size: 17px;
+    height: 28px;
+   }
+
+   .weatherbox p {
+    font-size: 13px;
+   }
+   .bilde img {
+    transform: translateY(-170px);
+    height: 140px;
+    width: 150px;
+    
+   }
+
+}
+
+
+@media (max-width: 370px) {
+  .bilde img { 
+    transform: translateY(-160px);
+  }
+
+  .weatherbox p {
+    font-size: 12px;
+  }
+
+    .searchHistory {
+    transform: translateY(-126px);
+  }
+}
+
+
+@media (max-width: 321px) {
+  .bilde img { 
+    transform: translateY(-150px);
+    margin-left: 10px;
+    height: 125px;
+    width: 140px;
+  }
+
+  .weatherbox p {
+    font-size: 11px;
+  }
+
+  .weatherbox h3 {
+    font-size: 16px;
+    height: 25px;
+  }
+
+  .weatherbox {
+    height: clamp(280px, 50%, 500px);
+  }
+
+}
+
+
