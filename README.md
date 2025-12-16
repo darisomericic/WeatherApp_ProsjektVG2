@@ -74,20 +74,20 @@ Bruker → UI (brukergrensesnitt) → API-kall → WeatherAPI → JSON-data → 
 # Available Scripts
 ## In the project directory, you can run:
 
-`npm start`
+### `npm start`
 Kjører appen i development modus.
 Åpne http://localhost:3000 for å vise nettsiden i nettleseren.
 
 Nettsiden laster opp på nytt når man redigeren siden.
 Du vil også se noen lite error linjer i nettsiden.
 
-`npm start -- --host X.X.X.X`
+### `npm start -- --host X.X.X.X`
 Denne kommandoen starter React-utviklingsserveren og gjør appen tilgjengelig på ditt lokale nettverk. Ved å erstatte X.X.X.X med datamaskinens lokale IP-adresse, kan andre enheter på det samme Wi-Fi-nettverket (som telefoner, nettbrett eller andre PC-er) åpne appen i nettleseren sin.
 
-`npm test`
+### `npm test`
 Starter testrunneren i interaktiv overvåkingsmodus.
 
-`npm run build`
+### `npm run build`
 Bygger appen for produksjon til build-mappen. Den pakker korrekt inn React i produksjonsmodus og optimaliserer byggeprosessen for best mulig ytelse.
 
 Bygget er minifisert, og filnavnene inkluderer hashene. 
