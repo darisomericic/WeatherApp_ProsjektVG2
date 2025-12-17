@@ -3,11 +3,8 @@ from flask_cors import CORS # importerer cors for å tillate kobling fra andre d
 from dotenv import load_dotenv # importerer dotenv for å lese det som står i .env filen og for å gjøre det tigjengelig i Python
 import os # importeres for å hente ting skrevet i .env filen
 import requests # dette importeres for at API-kall skal fungere
-<<<<<<< HEAD
 import mariadb # importeres for å kunne snakke med DB
-=======
 import mariadb # iporteres for å kunne snakke med DB
->>>>>>> aac72e825f8710b39aefc3a51b4475feb8ce9694
 
 load_dotenv() # laster alt som står i .env filer
 
