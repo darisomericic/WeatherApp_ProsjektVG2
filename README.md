@@ -8,7 +8,7 @@ Appen henter data fra en ekstern vær-API og presenterer temperatur, vind, fukti
 # 🚀 Funksjoner
 ### Hva appen viser/gjør 
 
- - Henter værdata fra en ekstern API (`WeatherAPI`)
+ - Henter værdata fra en ekstern API (https://www.weatherapi.com/)
 
  - Søk etter værmelding for hvilken som helst by i hele verden 
   
@@ -47,7 +47,7 @@ Bruker → UI (brukergrensesnitt) → API-kall → WeatherAPI → JSON-data → 
 - Rask tilgang til vær-data over hele verden 
 
 - Data som krever mye informasjon og infrastruktur er vanskelig å samle selv
-
+----
 
 ### Hvorfor brukte jeg React 
 - Gir bedre oversikt over filer, og gir bedre mappestruktur
@@ -56,11 +56,12 @@ Bruker → UI (brukergrensesnitt) → API-kall → WeatherAPI → JSON-data → 
 
 - Jeg hadde React som interessegruppe, så jeg ville prøve det på prosjektet mitt
 
+----
 ### Hvorfor har jeg mange feilhåndterings linjer 
 - API-kall er ikke alltid stabil, og feilmeldinger gjør det enklere for meg å se hva problemet er 
 
 - God feilhåndtering i koden får nettsiden til å se mer profesjonell ut, og gir brukeren bedre opplevelse
-
+----
 
 ### Hvorfor brukte jeg fetch istedenfor axios for å hente data fra API 
 
@@ -68,5 +69,32 @@ Bruker → UI (brukergrensesnitt) → API-kall → WeatherAPI → JSON-data → 
 
 - Trenger ikke å laste ned mange ting som jeg hadde gjort med axios
 
-- Fetch er en del av JavaScript, og det fungerer i alle moderne nettlesere 
+- Fetch er en del av JavaScript, og det fungerer i alle moderne nettlesere
+ ----
 
+# Tilgjengelige Skript
+## I denne mappen kan du kjøre følgende:
+
+### `npm start`
+Kjører appen i development modus.
+Åpne http://localhost:3000 for å vise nettsiden i nettleseren.
+
+Nettsiden laster opp på nytt når man redigeren siden.
+Du vil også se noen lite error linjer i nettsiden.
+
+----
+### `npm start -- --host X.X.X.X`
+Denne kommandoen starter React-utviklingsserveren og gjør appen tilgjengelig på ditt lokale nettverk. Ved å erstatte X.X.X.X med datamaskinens lokale IP-adresse, kan andre enheter på det samme Wi-Fi-nettverket (som telefoner, nettbrett eller andre PC-er) åpne appen i nettleseren sin.
+
+----
+### `npm test`
+Starter testrunneren i interaktiv overvåkingsmodus.
+
+----
+### `npm run build`
+Bygger appen for produksjon til build-mappen. Den pakker korrekt inn React i produksjonsmodus og optimaliserer byggeprosessen for best mulig ytelse.
+
+Bygget er minifisert, og filnavnene inkluderer hashene. 
+Appen din er klar til å distribueres!
+
+----
