@@ -70,9 +70,10 @@ if (json.location.country.trim().toLowerCase() !== Land.trim().toLowerCase()) { 
               
         </div>
               )}
+              <Analytics />          
           </div>
       </form>
     )
 };
-<Analytics /> 
+
 export default VærApp
