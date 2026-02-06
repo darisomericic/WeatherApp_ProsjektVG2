@@ -1,5 +1,7 @@
 import styles from './vær.module.css' // Importerer CSS-moduler for styling
 import { useState } from 'react' // Importerer useState-hooken fra React
+import { Analytics } from "@vercel/analytics/next"
+
 
 
 // hoved komponenter for værappen
@@ -23,7 +25,7 @@ const getVæret = async () => { // kaller funksjonen for å hente værdata
 
 try { // prøver å hente værdata
   const response = await fetch( // henter data for været fra backend-en
-`http://10.2.223.200:3000/weather?by=${By}&land=${Land}`); // backend url med By og Land som query parametre 
+`http://10.2.223.161:3000/weather?by=${By}&land=${Land}`); // backend url med By og Land som query parametre 
   const json = await response.json(); // konverterer responsen til JSON
 
 // sjekker om landet fra API-responsen passer sammen med stedet brukeren har skrevet inn
