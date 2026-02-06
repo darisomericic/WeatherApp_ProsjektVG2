@@ -9,6 +9,15 @@ function VærApp() {
   const [Land, setLand ] = useState("") // State for landet
   const [By, setBy ] = useState("") // State for byen
   const [Vær, setVæret ] = useState(null) // State for værdata
+  const [userIp, setUserIp] = useState(null);
+
+  useEffect(() => {
+    // We use a third-party service like api.ipify.org
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => setUserIp(data.ip))
+      .catch(error => console.error("Error fetching IP:", error));
+  }, []);
 
     // Funksjonen som håndterer innsending av skjemaet
     const handleSubmit = async (e) => {  // kaller funksjonen når skjemaet sendes inn
