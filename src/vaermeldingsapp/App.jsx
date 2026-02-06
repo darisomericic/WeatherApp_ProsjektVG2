@@ -1,6 +1,9 @@
 import styles from './vær.module.css' // Importerer CSS-moduler for styling
 import { useState } from 'react' // Importerer useState-hooken fra React
 import { Analytics } from "@vercel/analytics/react"; // Importerer Analytics-komponenten fra Vercel Analytics
+import { headers } from 'next/headers';
+
+
 
 
 
@@ -9,6 +12,9 @@ function VærApp() {
   const [Land, setLand ] = useState("") // State for landet
   const [By, setBy ] = useState("") // State for byen
   const [Vær, setVæret ] = useState(null) // State for værdata
+
+
+
   
 
     // Funksjonen som håndterer innsending av skjemaet
