@@ -1,7 +1,9 @@
 body {
   background-image: url(img/blurredsky.png);
   background-size: auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -12,24 +14,15 @@ body {
   top: 10vw;
   flex-direction: row;
   justify-content: center;
-
- 
-
 }
 
-
-
-.innhold input {  
+.innhold input {
   padding: 8px;
   opacity: 60%;
   border-radius: 5px;
   border: none;
   margin: 2px;
-  
-
-  
 }
-
 
 button {
   width: 50px;
@@ -39,11 +32,10 @@ button {
   background-color: rgb(58, 199, 58);
   border: none;
   cursor: pointer;
-  
 }
 
 button:hover {
-   background-color: rgb(93, 202, 93);
+  background-color: rgb(93, 202, 93);
 }
 
 button:active {
@@ -57,7 +49,6 @@ button:active {
   opacity: 50%;
   border-radius: 5px;
   height: clamp(340px, 50%, 500px);
-  
 }
 
 .weatherbox h3 {
@@ -73,9 +64,8 @@ button:active {
   color: white;
   text-align: right;
   margin-right: 25px;
-  font-size: 14px;         
+  font-size: 14px;
 }
-
 
 .bilde img {
   width: 50%;
@@ -85,7 +75,6 @@ button:active {
   border-radius: 5px;
   height: 170px;
   margin-top: 1rem;
-  
 }
 
 .searchHistory {
@@ -97,12 +86,6 @@ button:active {
   font-size: 20px;
 }
 
-
-
-
-
-
-
 @media (max-width: 409px) {
   .innhold input {
     padding: 3px;
@@ -111,44 +94,37 @@ button:active {
 
   button {
     padding: 3px;
-
   }
 
-   .weatherbox h3 {
+  .weatherbox h3 {
     font-size: 17px;
     height: 25px;
-   }
+  }
 
-   .weatherbox p {
+  .weatherbox p {
     font-size: 13px;
-   }
+  }
 
-   .bilde img {
+  .bilde img {
     margin-top: 20px;
-   }
+  }
 
-   .searchHistory {
+  .searchHistory {
     font-size: 15px;
     transform: translateY(-150px);
+  }
 
-   }
-
-   .weatherbox {
+  .weatherbox {
     height: clamp(310px, 50%, 500px);
-   }
+  }
 }
-
-
-
-
 
 @media (max-width: 400px) {
   .bilde img {
-   height: 150px;
-   width: 160px;
-   transform: translateY(-180px);
-   margin-left: 10px;
-   
+    height: 150px;
+    width: 160px;
+    transform: translateY(-180px);
+    margin-left: 10px;
   }
 
   .weatherbox {
@@ -157,43 +133,34 @@ button:active {
   .searchHistory {
     transform: translateY(-150px);
   }
-
-  
 }
 
-
 @media (max-width: 376px) {
-
-   .weatherbox {
+  .weatherbox {
     margin: 10px;
   }
- 
 
   .innhold input {
     width: 38.5%;
-    
-   }
+  }
 
-   .weatherbox h3 {
+  .weatherbox h3 {
     font-size: 17px;
     height: 21px;
-   }
+  }
 
-   .weatherbox p {
+  .weatherbox p {
     font-size: 13px;
-   }
-   .bilde img {
+  }
+  .bilde img {
     transform: translateY(-170px);
     height: 140px;
     width: 150px;
-    
-   }
-
+  }
 }
 
-
 @media (max-width: 370px) {
-  .bilde img { 
+  .bilde img {
     transform: translateY(-160px);
   }
 
@@ -201,14 +168,13 @@ button:active {
     font-size: 12px;
   }
 
-    .searchHistory {
+  .searchHistory {
     transform: translateY(-126px);
   }
 }
 
-
 @media (max-width: 321px) {
-  .bilde img { 
+  .bilde img {
     transform: translateY(-150px);
     margin-left: 10px;
     height: 125px;
@@ -227,7 +193,4 @@ button:active {
   .weatherbox {
     height: clamp(280px, 50%, 500px);
   }
-
 }
-
-
